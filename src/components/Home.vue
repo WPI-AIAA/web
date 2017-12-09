@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<p> Home </p>
+		<h1> AIAA at WPI </h1>
 	</div>
 </template>
 
@@ -12,5 +12,5 @@
 
 </script>
 
-<style>
+<style scope>
 </style>

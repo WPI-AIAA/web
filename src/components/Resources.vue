@@ -12,5 +12,5 @@
 
 </script>
 
-<style>
+<style scope>
 </style>

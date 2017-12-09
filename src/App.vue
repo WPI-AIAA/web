@@ -2,11 +2,8 @@
 
   <div id="app">
 
-    <!-- Header Bar -->
-    <HeaderBar></HeaderBar>
-
-    <!-- Load Dynamic Content -->
-    <router-view></router-view>
+    <NavigationBar/>
+    <router-view/>
 
   </div>
 
@@ -14,18 +11,19 @@
 
 <script>
 
-import HeaderBar from './components/HeaderBar'
+  import NavigationBar from './components/NavigationBar'
 
-export default {
-  name: 'app',
-  components: {
-    HeaderBar
+  export default {
+    name: 'app',
+    components: {
+      NavigationBar
+    }
   }
-}
 
 </script>
 
 <style>
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
