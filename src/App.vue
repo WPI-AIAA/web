@@ -1,14 +1,28 @@
 <template>
+
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+
+    <!-- Header Bar -->
+    <HeaderBar></HeaderBar>
+
+    <!-- Load Dynamic Content -->
+    <router-view></router-view>
+
   </div>
+
 </template>
 
 <script>
+
+import HeaderBar from './components/HeaderBar'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    HeaderBar
+  }
 }
+
 </script>
 
 <style>
