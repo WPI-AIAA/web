@@ -10,6 +10,7 @@ import Login from '@/components/Login'
 import Lounge from '@/components/Login/Lounge'
 import Lab from '@/components/Login/Lab'
 import Dashboard from '@/components/Dashboard'
+import NotFound from '@/components/NotFound'
 
 
 // Setup Router Paths
@@ -55,6 +56,11 @@ export default new Router({
       path: '/dashboard',
       name: 'dashboard',
       component: Dashboard
+    },
+    {
+      path: '*',
+      name: 'NotFound',
+      component: NotFound
     }
   ]
 })
