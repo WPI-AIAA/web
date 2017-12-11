@@ -35,7 +35,6 @@
 }
 
 p {
-    align-self: center;
     text-align: justify;
     width: 60%;
     margin-left: 20%;
