@@ -1,19 +1,22 @@
 <template>
+
 	<div>
-		<p> Lab and Lounge Login </p>
+		<div v-if="true">
 
-		<p> Areo Lounge or Aero Lab? </p>
-		<ul>
-			<li> Aero Lounge </li>
-			<li> Aero Lab </li>
-		</ul>
+			<h1> Lounge and Lab Login </h1>
+			<button v-on:click=""> Lounge </button>
+			<button v-on:click=""> Lab </button>
 
+			<p> Display Lab Status Here! </p>
+
+		</div>
+
+		<router-view/>
 	</div>
+
 </template>
 
 <script>
-
-
 
 	export default {
 		name: 'login',
@@ -21,5 +24,10 @@
 
 </script>
 
-<style scope>
+<style>
+
+	p {
+		text-align: center;
+	}
+
 </style>
