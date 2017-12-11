@@ -18,6 +18,27 @@
 		    </div>
 		  </div>
 
+		  <div v-if="showLabStatus()">
+
+		  	<span>
+		  		<span class="btn btn-disable"> 
+		  			Lounge 
+		  			<span v-if="getStatus('lounge')" class="badge badge-success"> Open </span> 
+		  			<span v-else class="badge badge-danger"> Closed </span>
+		  		</span>
+		  	</span>
+
+		  	<span>
+		  		<span class="btn btn-disable"> 
+		  			Lab
+		  			<span v-if="getStatus('lab')" class="badge badge-success"> Open </span>
+		  			<span v-else class="badge badge-danger"> Closed </span>
+
+		  		</span>
+		  	</span>
+
+		  </div>
+
 		</nav>
 
 		<div id="buffer"/>
@@ -29,8 +50,32 @@
 <script>
 
 	export default {
-		name: 'navigationBar'
+		name: 'navigationBar',
+		methods: {
+
+			// Determine if the Lab status should be displayed
+			showLabStatus: function(){
+				if(this.$route.name != "blank"){
+					return true;
+				} else {
+					return false;
+				}
+			},
+
+			// Determine if the Lounge/Lab is open or closed
+			getStatus: function(location){
+				// Figure out later
+				if(location == "lounge"){
+					return true;
+				} else {
+					return false;
+				}
+			}
+		}
+
 	}
+
+
 
 </script>
 
@@ -46,6 +91,12 @@
 
 	img {
 		width: 100px;
+	}
+
+	.btn-disable {
+		width: 160px;
+		background-color: #A9B0B7;
+		margin: 5px;
 	}
 
 </style>
