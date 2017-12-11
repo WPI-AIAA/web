@@ -4,7 +4,7 @@
 		
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-		  <router-link class="navbar-brand" to="/"> WPI-AIAA </router-link>
+		  <router-link class="navbar-brand" to="/"> <img src="/static/WPI.png"> </router-link>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
@@ -29,8 +29,7 @@
 <script>
 
 	export default {
-		name: 'navigationBar',
-		data() {}
+		name: 'navigationBar'
 	}
 
 </script>
@@ -43,6 +42,10 @@
 
 	nav {
 		background-color: #222222;
+	}
+
+	img {
+		width: 100px;
 	}
 
 </style>
