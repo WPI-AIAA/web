@@ -7,9 +7,6 @@
 			<button v-on:click="goToLogin('lounge')" type="button" class="btn btn-outline-secondary btn-lg"> Lounge </button>
 			<button v-on:click="goToLogin('lab')" type="button" class="btn btn-outline-secondary btn-lg"> Lab </button>
 
-
-			<p> Display Location Status Here! </p>
-
 		</div>
 
 		<router-view/>

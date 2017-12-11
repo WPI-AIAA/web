@@ -55,6 +55,7 @@
 
 			// Determine if the Lab status should be displayed
 			showLabStatus: function(){
+				// Change "blank" later if need be
 				if(this.$route.name != "blank"){
 					return true;
 				} else {
@@ -67,6 +68,8 @@
 				// Figure out later
 				if(location == "lounge"){
 					return true;
+				} else if(location == "lab") {
+					return false;
 				} else {
 					return false;
 				}
