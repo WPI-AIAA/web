@@ -1,14 +1,9 @@
 <template>
 
 	<div>
-		<img src="/static/AeroLounge.png">
+		<img :src="getLogo()">
 
-		<div class="input-group input-group-lg">
-			<input type="text" class="form-control" placeholder="Swipe your ID or enter your Username">
-			<span class="input-group-btn"> 
-				<button type="button" class="btn btn-secondary"> Login </button>
-			</span>
-		</div>
+		<IdInput/>
 
 	</div>
 
@@ -16,16 +11,21 @@
 
 <script>
 
+	import IdInput from './IdInput.vue'
+
 	export default {
 		name: 'lounge',
 		data() {
 			return{
-				image: '/assets/AeroLounge.png'
+				name: 'AeroLounge'
 			}
+		},
+		components: {
+			IdInput
 		},
 		methods: {
 			getLogo: function(){
-				return "@/assets/AeroLounge.png"
+				return '/static/' + this.name + '.png';
 			}
 
 		}
