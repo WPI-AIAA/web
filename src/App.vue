@@ -9,6 +9,7 @@
 
 </template>
 
+
 <script>
 
   import NavigationBar from './components/NavigationBar'
@@ -22,6 +23,7 @@
 
 </script>
 
+
 <style>
 
 #app {
@@ -30,6 +32,13 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+
+p {
+    align-self: center;
+    text-align: justify;
+    width: 60%;
+    margin-left: 20%;
+  }
+
 </style>

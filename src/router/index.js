@@ -1,13 +1,19 @@
+// Vue Stuff
 import Vue from 'vue'
 import Router from 'vue-router'
 
+// Import Pages for the Router
 import Home from '@/components/Home'
 import About from '@/components/About'
 import Resources from '@/components/Resources'
 import Login from '@/components/Login'
+import Lounge from '@/components/Login/Lounge'
+import Lab from '@/components/Login/Lab'
+import Dashboard from '@/components/Dashboard'
 
+
+// Setup Router Paths
 Vue.use(Router)
-
 export default new Router({
   routes: [
     {
@@ -33,7 +39,22 @@ export default new Router({
     {
       path: '/login',
       name: 'login',
-      component: Login
+      component: Login,
+      children: [
+        {
+          path: 'lounge',
+          component: Lounge
+        },
+        {
+          path: 'lab',
+          component: Lab
+        }
+        ]
+    },
+    {
+      path: '/dashboard',
+      name: 'dashboard',
+      component: Dashboard
     }
   ]
 })
