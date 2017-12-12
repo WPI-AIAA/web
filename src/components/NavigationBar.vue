@@ -89,6 +89,7 @@
 	}
 
 	nav {
+		font-size: 14pt;
 		background-color: #222222;
 	}
 

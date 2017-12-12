@@ -41,9 +41,6 @@
 			// Checks if the New User Dialoge should be displayed
 			showNewUser: function(){
 				return false;
-			},
-			registerUser: function(){
-				//Gets triggered by unknown id swipe
 			}
 
 		}
