@@ -1,6 +1,6 @@
 <template>
 
-	<div id="navigationBar">
+	<div v-if="api()" id="navigationBar">
 		
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 
@@ -52,6 +52,15 @@
 	export default {
 		name: 'navigationBar',
 		methods: {
+
+			// If we are on api hide the navbar
+			api: function(){
+				if(this.$route.name == "api"){
+					return false;
+				} else {
+					return true;
+				}
+			},
 
 			// Determine if the Lab status should be displayed
 			showLabStatus: function(){
