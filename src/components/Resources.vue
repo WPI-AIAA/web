@@ -1,8 +1,7 @@
 <template>
 	<div>
-		<h1> Resources </h1>
-		<p> Lorem ipsum dolor sit amet, tation verear invenire vis ei, eos ei alia harum sanctus, ea choro legendos facilisis has. Quem ferri ponderum eu eum, senserit abhorreant nam ad. Soleat virtute discere at vel, movet utamur scripserit sed te. Ad per movet dignissim, ne quo nibh mucius repudiare. Utinam possim antiopam eu sea, sea doctus quaeque recusabo in. Mel iracundia appellantur at. Ei sed euismod vivendum atomorum, ne virtute expetendis vituperatoribus mea, movet simul solet quo ne. In velit repudiare euripidis quo, pro etiam voluptatibus ea. Congue ignota corpora te est, qui ea saepe ridens, per ex diam nulla atomorum. Id enim sensibus neglegentur sea, vel ex saperet consequat definitionem.
- 		</p>
+		<h1> Calendar </h1>
+		<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=wpi.aiaa%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 	</div>
 </template>
 
