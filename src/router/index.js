@@ -36,7 +36,7 @@ export default new Router({
     {
       path: '/resources',
       name: 'resources',
-      component: Resources
+      component: About
     },
     {
       path: '/login',
